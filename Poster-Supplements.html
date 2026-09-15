@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Further analyses — Marty, Breheny &amp; Le Druillennec</title>
+<meta name="description" content="Further analyses accompanying the poster by Paul Marty, Richard Breheny and Simon Le Druillennec.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+
+<style>
+  :root {
+    --paper:  #F2F8F0;
+    --ink:    #1A1A1A;
+    --purple: #3D0559;
+    --mid:    #8F6BA6;
+    --rule:   #B5A0C4;
+    --shade:  #F2ECF3;
+
+    --serif: "Spectral", Georgia, "Times New Roman", serif;
+    --sans:  "IBM Plex Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+
+    --measure: 34rem;
+  }
+
+  *, *::before, *::after { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+
+  body {
+    margin: 0;
+    background: var(--paper);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 1.0625rem;
+    line-height: 1.6;
+    font-feature-settings: "onum" 1;
+  }
+
+  .wrap {
+    max-width: var(--measure);
+    margin: 0 auto;
+    padding: 2.5rem 1.5rem 5rem;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    line-height: 1.25;
+    margin: 0 0 0.75rem;
+    color: var(--purple);
+    text-wrap: balance;
+  }
+
+  .byline {
+    font-family: var(--sans);
+    font-size: 0.875rem;
+    line-height: 1.5;
+    margin: 0 0 2.5rem;
+    color: #4a4a4a;
+  }
+
+  h2 {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 1rem;
+    color: var(--purple);
+    margin: 0 0 0.75rem;
+    padding-bottom: 0.3rem;
+    border-bottom: 1px solid var(--rule);
+  }
+
+  h3 {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 0.9375rem;
+    margin: 2rem 0 0.4rem;
+  }
+
+  p { margin: 0 0 1rem; }
+
+  a { color: var(--purple); text-underline-offset: 2px; }
+  a:focus-visible { outline: 2px solid var(--mid); outline-offset: 2px; border-radius: 2px; }
+
+  /* ---- pieces you may want when adding content ---------------------- */
+
+  /* Small caps for reading labels and sentence types. */
+  .sc {
+    font-family: var(--sans);
+    font-size: 0.78em;
+    font-weight: 500;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+  }
+  .sc-purple { color: var(--purple); }
+
+  /* Numbered examples with the number hung in the margin. */
+  ol.examples { list-style: none; margin: 1.5rem 0; padding: 0; counter-reset: ex; }
+  ol.examples > li {
+    counter-increment: ex;
+    position: relative;
+    padding-left: 2.5rem;
+    margin-bottom: 1.25rem;
+  }
+  ol.examples > li::before {
+    content: "(" counter(ex) ")";
+    position: absolute; left: 0; top: 0;
+    font-family: var(--sans); font-size: 0.8125rem; color: var(--mid); line-height: 1.85;
+  }
+
+  /* The poster's shaded claim box. */
+  .claim {
+    background: var(--shade);
+    border-radius: 10px;
+    padding: 0.9rem 1.1rem;
+    margin: 1.25rem 0;
+  }
+  .claim p:last-child { margin-bottom: 0; }
+
+  figure { margin: 1.5rem 0 2rem; }
+  figure img {
+    width: 100%; height: auto; display: block;
+    background: #fff;
+    border: 1px solid var(--rule);
+    border-radius: 6px;
+  }
+  figcaption {
+    font-family: var(--sans);
+    font-size: 0.8125rem;
+    line-height: 1.5;
+    color: #4a4a4a;
+    margin-top: 0.5rem;
+  }
+
+  footer {
+    margin-top: 3.5rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--sans);
+    font-size: 0.8125rem;
+    color: #5a5a5a;
+  }
+
+  @media (max-width: 30rem) { h1 { font-size: 1.35rem; } }
+  @media (prefers-reduced-motion: reduce) { * { transition: none !important; animation: none !important; } }
+</style>
+</head>
+<body>
+
+<div class="wrap">
+
+  <h1>Assessing context adaptation in scalar-inference priming</h1>
+  <p class="byline">Paul Marty · Richard Breheny · Simon Le Druillennec</p>
+
+  <h2>Further analyses</h2>
+
+  <figure class="wide">
+    <img src="figures/AllSentences-by-ReaderE1.png"
+         alt="Boxplots of question-elicitation responses ...">
+    <figcaption>XXXX</figcaption>
+  </figure>
+
+  <figure class="wide">
+    <img src="figures/AllSentences-by-ReaderE2.png"
+         alt="Boxplots of question-elicitation responses ...">
+    <figcaption>XXXX</figcaption>
+  </figure>
+
+
+  <!-- ================================================================
+       Add each analysis below: a heading, a sentence on what it asks,
+       the figure, and whatever else it needs.
+
+       <h3>Responder profiles</h3>
+       <p>What this analysis asks, in one sentence.</p>
+       <figure>
+         <img src="figures/profile-by-condition.png" alt="Describe the figure.">
+         <figcaption>What the reader should take from it.</figcaption>
+       </figure>
+
+       Also ready to use: <span class="sc">small caps</span> for reading
+       labels, <ol class="examples"> for numbered example sentences, and
+       <div class="claim"> for a shaded box.
+       ================================================================ -->
+
+  <footer>
+    <p><a href="mailto:simon.druillennec.24@ucl.ac.uk">simon.druillennec.24@ucl.ac.uk</a></p>
+  </footer>
+
+</div>
+
+</body>
+</html>
